@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EjerciciosVariablesSol",
+            "request": "launch",
+            "mainClass": "Practica1_sol.EjerciciosVariablesSol",
+            "projectName": "Programacion_79a6085f"
+        },
+        {
+            "type": "java",
             "name": "EjerciciosVariables",
             "request": "launch",
             "mainClass": "Practica1.EjerciciosVariables",

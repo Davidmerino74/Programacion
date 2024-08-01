@@ -1,13 +1,13 @@
-package Practica1;
+package Practica1_sol;
 
-public class EjerciciosVariables {
+public class EjerciciosVariablesSol {
      // ESTE MÉTODO NI TOCAR
     public static void main(String[] args) throws Exception {
         // Si no queréis que se ejecute un método (ejercicio) en concreto comentadlo usando la barra de comentar --> // 
         ejercicio1();
     }
 
-    // A partir de este punto empiezan los ejercicios, los nombres de cada método indican a que ejercicio pertenecen
+    // A partir de este punto empiezan los ejercicios, los nombres de cada método indican a que ejercicio pertenecen.
     // Dadle caña y no dudeis en preguntar vuestras dudas :)
 
     private static void ejercicio1(){
@@ -16,10 +16,20 @@ public class EjerciciosVariables {
             una variable A de tipo double y una variable C de tipo char y asigna a cada una un valor. 
             A continuación muestra por pantalla: El valor de cada variable, la suma de N + A, 
             la diferencia de A - N, el valor numérico correspondiente al carácter que contiene la variable C.
-       */ 
+       */  
         System.out.println("Ejercicio número 1");
 
         // Vuestro código va aquí
+        int n = 3;
+        double a = 5.3;
+        char c = 'X';
+
+        System.out.println(n);
+        System.out.println(a);
+        System.out.println(c);
+        System.out.println(n+a);
+        System.out.println(a-n);
+        System.out.println((int)c);
 
 
         //Final del ejercicio
