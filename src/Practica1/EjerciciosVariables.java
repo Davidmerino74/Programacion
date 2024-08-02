@@ -80,6 +80,8 @@ public class EjerciciosVariables {
         System.out.println("Final del ejercicio número 4");
     }
 
+    //Cambiar a partir de aquí
+
     private static void ejercicio5(){
         /*
             Programa Java que declare una variable A de tipo entero y asígnale un valor. A continuación muestra 
