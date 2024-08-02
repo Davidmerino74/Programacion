@@ -5,6 +5,12 @@ public class EjerciciosVariables {
     public static void main(String[] args) throws Exception {
         // Si no queréis que se ejecute un método (ejercicio) en concreto comentadlo usando la barra de comentar --> // 
         ejercicio1();
+        ejercicio2();
+        ejercicio3();
+        ejercicio4();
+        ejercicio5();
+        ejercicio6();
+        ejercicio7();
     }
 
     // A partir de este punto empiezan los ejercicios, los nombres de cada método indican a que ejercicio pertenecen.
