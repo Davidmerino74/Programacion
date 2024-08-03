@@ -7,6 +7,9 @@ public class EjerciciosCondiciones {
         ejercicio1();
         ejercicio2();
         ejercicio3();
+        ejercicio4();
+        ejercicio5();
+        ejercicio6();
     }
 
     // A partir de este punto empiezan los ejercicios, los nombres de cada método indican a que ejercicio pertenecen.
@@ -19,13 +22,13 @@ public class EjerciciosCondiciones {
             para resolverlo.
         */
 
-        System.out.println("Ejercicio número 5");
+        System.out.println("Ejercicio número 1");
 
         // Vuestro código va aquí
 
 
         //Final del ejercicio
-        System.out.println("Final del ejercicio número 5");
+        System.out.println("Final del ejercicio número 1");
     }
 
     private static void ejercicio2(){
@@ -35,13 +38,13 @@ public class EjerciciosCondiciones {
             Utiliza el operador condicional (? : ) dentro del println para resolverlo.
         */
 
-        System.out.println("Ejercicio número 6");
+        System.out.println("Ejercicio número 2");
 
         // Vuestro código va aquí
 
 
         //Final del ejercicio
-        System.out.println("Final del ejercicio número 6");
+        System.out.println("Final del ejercicio número 2");
     }
 
     private static void ejercicio3(){
@@ -52,12 +55,54 @@ public class EjerciciosCondiciones {
             condicional ( ? : ) dentro del println para resolverlo. 
         */
 
-        System.out.println("Ejercicio número 7");
+        System.out.println("Ejercicio número 3");
 
         // Vuestro código va aquí
 
 
         //Final del ejercicio
-        System.out.println("Final del ejercicio número 7");
+        System.out.println("Final del ejercicio número 3");
+    }
+
+    private static void ejercicio4(){
+        /*
+        
+        */
+
+        System.out.println("Ejercicio número 4");
+
+        // Vuestro código va aquí
+
+
+        //Final del ejercicio
+        System.out.println("Final del ejercicio número 4");
+    }
+
+    private static void ejercicio5(){
+        /*
+        
+        */
+
+        System.out.println("Ejercicio número 5");
+
+        // Vuestro código va aquí
+
+
+        //Final del ejercicio
+        System.out.println("Final del ejercicio número 5");
+    }
+
+    private static void ejercicio6(){
+        /*
+        
+        */
+
+        System.out.println("Ejercicio número 6");
+
+        // Vuestro código va aquí
+
+
+        //Final del ejercicio
+        System.out.println("Final del ejercicio número 6");
     }
 }

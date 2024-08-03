@@ -10,7 +10,6 @@ public class EjerciciosVariables {
         ejercicio4();
         ejercicio5();
         ejercicio6();
-        ejercicio7();
     }
 
     // A partir de este punto empiezan los ejercicios, los nombres de cada método indican a que ejercicio pertenecen.
@@ -84,9 +83,9 @@ public class EjerciciosVariables {
 
     private static void ejercicio5(){
         /*
-            Programa Java que declare una variable A de tipo entero y asígnale un valor. A continuación muestra 
-            un mensaje indicando si A es par o impar. Utiliza el operador condicional ( ? : ) dentro del println 
-            para resolverlo.
+            Programa java que declare dos variables enteras a y b y asignales un valor a cada una. 
+            A continuación printea los valores asignados a cada valor y después intercambia los valores 
+            de las variables entre ellos para volver a printear los valores correspondientes.
         */
 
         System.out.println("Ejercicio número 5");
@@ -99,35 +98,20 @@ public class EjerciciosVariables {
     }
 
     private static void ejercicio6(){
-        /* 
-            Programa Java que declare una variable B de tipo entero y asígnale un valor. A continuación muestra un 
-            mensaje indicando si el valor de B es positivo o negativo. Consideraremos el 0 como positivo. 
-            Utiliza el operador condicional (? : ) dentro del println para resolverlo.
-        */
-
-        System.out.println("Ejercicio número 6");
-
-        // Vuestro código va aquí
-
-
-        //Final del ejercicio
-        System.out.println("Final del ejercicio número 6");
-    }
-
-    private static void ejercicio7(){
         /*
-            Programa Java que declare una variable C de tipo entero y asígnale un valor. A continuación muestra un 
-            mensaje indicando si el valor de C es positivo o negativo, si es par o impar, si es múltiplo de 5, si 
-            es múltiplo de 10 y si es mayor o menor que 100. Consideraremos el 0 como positivo. Utiliza el operador 
-            condicional ( ? : ) dentro del println para resolverlo. 
+            Programa java que declare dos variables enteras a y b y asignales un valor a cada una. 
+            A continuación printea los valores asignados a cada valor y después intercambia los valores de las variables entre ellos, 
+            al nuevo valor de la variable a multiplícalo por el nuevo valor de la variable b y, después, al nuevo valor de la variable 
+            b restale el nuevo valor de la variable a, el valor posterior a la multiplicación. En la terminal printea los valores intercambiados 
+            y los posteriores a las operaciones.
         */
 
-        System.out.println("Ejercicio número 7");
+        System.out.println("Ejercicio número 5");
 
         // Vuestro código va aquí
 
 
         //Final del ejercicio
-        System.out.println("Final del ejercicio número 7");
+        System.out.println("Final del ejercicio número 5");
     }
 }
