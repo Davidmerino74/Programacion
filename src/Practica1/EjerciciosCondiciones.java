@@ -66,7 +66,9 @@ public class EjerciciosCondiciones {
 
     private static void ejercicio4(){
         /*
-        
+            Programa java que declare una variable numérica de 8 cifras. La idea de este programa es calcular la letra del DNI 
+            asociada a esos ocho números, para ello vais a tener que seguir el pequeño tutorial de la siguiente página: 
+            https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
         */
 
         System.out.println("Ejercicio número 4");
@@ -80,7 +82,8 @@ public class EjerciciosCondiciones {
 
     private static void ejercicio5(){
         /*
-        
+            Programa java que declare una variable entera y asignale un valor que vaya del 1 al 10. A continuación desarrolla un programa 
+            que printee ese número pero con palabras, por ejemplo si le asignas el valor número 7 el programa debería printear Siete.
         */
 
         System.out.println("Ejercicio número 5");
@@ -94,7 +97,8 @@ public class EjerciciosCondiciones {
 
     private static void ejercicio6(){
         /*
-        
+            Programa java que declare dos variables de tipo entero y asignales un valor. A continuación indica vía println si
+            el primer número es mayor, menor o los dos números son iguales. 
         */
 
         System.out.println("Ejercicio número 6");
