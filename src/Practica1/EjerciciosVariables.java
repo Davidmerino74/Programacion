@@ -79,8 +79,6 @@ public class EjerciciosVariables {
         System.out.println("Final del ejercicio número 4");
     }
 
-    //Cambiar a partir de aquí
-
     private static void ejercicio5(){
         /*
             Programa java que declare dos variables enteras a y b y asignales un valor a cada una. 
