@@ -51,7 +51,8 @@ def ejercicio4():
 
 def ejercicio5():
     """
-
+        Programa que declare dos variables enteras, la idea de este programita es que saque el resultado de la potencia de esos dos valores introducidos 
+        aunque no se puede utilizar el operador de la potencia. (Es muy parecido al ejercicio anterior).
     """
 
     print("Inicio ejercicio 5")
@@ -62,7 +63,9 @@ def ejercicio5():
 
 def ejercicio6():
     """
-    
+        Como último ejercicio, para rizar el rizo vais declarar dos variables enteras y mezclar tanto el ejercicio 4 como el 5, o sea, 
+        tenéis que conseguir el resultado de la potencia entre dos números pero sin usar ni el operador de la potencia ni el de la multiplicación, 
+        véase, a base de puras sumas y bucles. 
     """
 
     print("Inicio ejercicio 6")

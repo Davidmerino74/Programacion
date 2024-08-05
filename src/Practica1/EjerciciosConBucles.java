@@ -78,7 +78,8 @@ public class EjerciciosConBucles {
 
     private static void ejercicio5(){
         /*
-        
+            Programa que declare dos variables enteras, la idea de este programita es que saque el resultado de la potencia de esos dos valores introducidos 
+            aunque no se puede utilizar el operador de la potencia. (Es muy parecido al ejercicio anterior).
         */
 
         System.out.println("Ejercicio número 5");
@@ -92,15 +93,17 @@ public class EjerciciosConBucles {
 
     private static void ejercicio6(){
         /*
-        
+            Como último ejercicio, para rizar el rizo vais declarar dos variables enteras y mezclar tanto el ejercicio 4 como el 5, o sea, 
+            tenéis que conseguir el resultado de la potencia entre dos números pero sin usar ni el operador de la potencia ni el de la multiplicación, véase, 
+            a base de puras sumas y bucles. 
         */
 
-        System.out.println("Ejercicio número 5");
+        System.out.println("Ejercicio número 6");
 
         // Vuestro código va aquí
 
 
         //Final del ejercicio
-        System.out.println("Final del ejercicio número 5");
+        System.out.println("Final del ejercicio número 6");
     }
 }
