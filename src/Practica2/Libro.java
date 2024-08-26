@@ -6,10 +6,13 @@ public class Libro {
     /*
      * titulo: El título del libro en formato String.
      * fecha_publ: El año de publicación del libro en formato Integer.
-     * autor: El nombre y el apellido del autor o autora del libro en formato String
-     * 
+     * autor: El autor o autora del libro.
+     * numPaginas: El número de páginas.
+     * genero: El género del libro.
+     * sinopsis: La sinopsis del libro.
      */
     
+    // Método constructor
 
     //Getters y setters
 }
