@@ -17,11 +17,15 @@ public class EjerciciosConBucles {
     private static void ejercicio1(){
         /*
             Programa java que printee en pantalla todos los números del 0 al 100, ambos incluídos.
+            
        */  
         System.out.println("Ejercicio número 1");
-
+        
         // Vuestro código va aquí
-
+        int i;
+          for (i=0;i<=100;i++){
+            System.out.println(i);
+          }
 
         //Final del ejercicio
         System.out.println("Final del ejercicio número 1");
@@ -33,12 +37,13 @@ public class EjerciciosConBucles {
             Programa java que printee en pantalla únicamente los números pares que vayan del 0 al 100, ambos incluídos. 
             Recordad que el 0 es un número par. 
         */
-
+                    
         System.out.println("Ejercicio número 2");
-
         // Vuestro código va aquí
-
-
+        int i;
+          for (i=0;i<=100;i+=2)  {
+            System.out.println(i);
+          }  
         //Final del ejercicio
         System.out.println("Final del ejercicio número 2");
     }
@@ -48,12 +53,16 @@ public class EjerciciosConBucles {
             Programa java que declare dos variables con un valor entero. La función de este programa es ir sumándole a la primera variable a 
             la segunda hasta que el valor de esta primera pase de 100, una vez pase de ese valor printear el valor final en la pantalla.
         */
-
+        
         System.out.println("Ejercicio número 3");
-
         // Vuestro código va aquí
-
-
+        int a=5;
+        int b=10;
+        int suma=a;
+        while (suma<100){
+            suma=suma+b;
+        }
+        System.out.println(suma);
         //Final del ejercicio
         System.out.println("Final del ejercicio número 3");
     }
@@ -64,11 +73,19 @@ public class EjerciciosConBucles {
             por el de la segunda pero sin usar la multiplicación. Por ejemplo, si queremos hacer la operación 2 * 3 no podemos hacerla tal cual, 
             deberíamos sumar 2 en 3 ocasiones, o sea, 2 + 2 + 2.
         */
-
-        System.out.println("Ejercicio número 4");
+        
 
         // Vuestro código va aquí
+        int a=5;
+        int b=10;
+        int resultado=0;
+        
+        for (int i=1;i<=b;i++){
+            resultado=resultado+a;            
+        }
+        System.out.println(resultado);
 
+        System.out.println("Ejercicio número 4");
 
         //Final del ejercicio
         System.out.println("Final del ejercicio número 4");
@@ -81,11 +98,17 @@ public class EjerciciosConBucles {
             Programa que declare dos variables enteras, la idea de este programita es que saque el resultado de la potencia de esos dos valores introducidos 
             aunque no se puede utilizar el operador de la potencia. (Es muy parecido al ejercicio anterior).
         */
-
         System.out.println("Ejercicio número 5");
-
         // Vuestro código va aquí
+        int a=2;
+        int b=3;
+        int resultado=0;
+        for (int i=1;i<=b;i++ ){
+            for(int x=1;x<=2;x++){
+                resultado=resultado+a;
+            }
 
+        }
 
         //Final del ejercicio
         System.out.println("Final del ejercicio número 5");
@@ -105,5 +128,6 @@ public class EjerciciosConBucles {
 
         //Final del ejercicio
         System.out.println("Final del ejercicio número 6");
+        
     }
 }

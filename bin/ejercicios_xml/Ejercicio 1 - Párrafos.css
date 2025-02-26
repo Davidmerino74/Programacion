@@ -1,0 +1,8 @@
+titulo, autor, fechaPublicacion {
+    display: block;
+  }
+libro {
+display: table;
+
+border: black 1px solid;
+}
