@@ -6,6 +6,7 @@ public class Autora {
      * nombre: Nombre de la autora.
      * apellidos: Apellidos de la autora
      */
+    
     private String nombre;
     private String apellidos;
     //Método constructor
@@ -26,4 +27,5 @@ public class Autora {
     public void setApellidos(String pApellidos){
         this.apellidos=pApellidos;
     }
+    
 }

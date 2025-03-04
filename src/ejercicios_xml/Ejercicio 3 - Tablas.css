@@ -1,0 +1,162 @@
+/* EJERCICIO 3.1 */
+
+/* ies {
+    font-family: sans-serif;
+  }
+  
+  nombreCentro {
+    display: block;
+    font-size: 120%;
+  }
+  
+  web {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  ciclos {
+    display: table;
+    border-spacing: 10px;
+    border: black 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  ciclo {
+    display: table-row;
+  }
+  
+  nombre, grado, decretoTitulo {
+    background-color: white;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 10px;
+  } */
+
+  /* EJERCICIO 3.2 */
+
+  /* ies {
+    font-family: sans-serif;
+    display: table;
+    border-spacing: 10px;
+    border: black 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  nombreCentro {
+    display: table-caption;
+    text-align: center;
+    background-color: #DDDDDD;
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  web {
+    display: none;
+  }
+  
+  ciclos {
+  }
+  
+  ciclo {
+    display: table-row;
+  }
+  
+  nombre, grado, decretoTitulo {
+    background-color: white;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 10px;
+  } */
+  
+
+  /* EJERCICIO 3.3 */
+
+  /* ies {
+    font-family: sans-serif;
+  }
+  
+  nombreCentro {
+    display: block;
+    float: left;
+    font-size: 120%;
+  }
+  
+  web {
+    display: block;
+    float: right;
+    font-size: 120%;
+    margin-bottom: 10px;
+  }
+  
+  ciclos {
+    display: block;
+    clear: both;
+  }
+  
+  ciclo {
+    display: table;
+    border-spacing: 10px;
+    border: black 1px solid;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  
+  nombre {
+    display: table-caption;
+    background-color: #DDDDDD;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  grado, decretoTitulo {
+    background-color: white;
+    border: black 1px solid;
+    display: table-cell;
+    padding: 10px;
+  } */
+  
+
+  /* EJERCICIO 3.4 */
+
+  ies {
+    font-family: sans-serif;
+  }
+  
+  nombreCentro {
+    display: block;
+    float: right;
+    font-size: 120%;
+  }
+  
+  web {
+    display: block;
+    float: left;
+    font-size: 120%;
+    margin-bottom: 10px;
+  }
+  
+  ciclos {
+    display: block;
+    clear: both;
+  }
+  
+  ciclo {
+    display: table;
+    border-spacing: 10px;
+    border: black 1px solid;
+    float: left;
+    margin: 10px;
+  }
+  
+  nombre, grado, decretoTitulo {
+    background-color: lightgreen;
+    display: table-row;
+    padding: 10px;
+  }

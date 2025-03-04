@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="Ejercicio 1 - Párrafos.css"?>
+
+
+
 <!-- los ejercios están en esta dirección y las respuestas también  https://www.mclibre.org/consultar/xml/ejercicios/css.html -->
+
+<!-- EN LUGAR DE CREAR LOS FICHEROS XML "QUE SERIAN IGUALES" HE  PUESTO EN EL CSS EL TITULO DE CADA EJERCICIO, DESCOMENTAR EL EJERCICIO QUE SE QUIERA VER , CTRL+KC PARA COMENTAR Y CTRL+KU PARA DESCOMENTAR -->
+
+
+
 <biblioteca>
   <libro>
     <titulo>La vida está en otra parte</titulo>

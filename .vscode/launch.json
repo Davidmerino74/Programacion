@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio2.Main",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio1.Main",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "AnimalTest",
+            "request": "launch",
+            "mainClass": "A02_Practica3_2_Herencias.Ejercicio4.AnimalTest",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "A02_Practica3_2_Herencias.Ejercicio3.Main",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "A02_Practica3_2_Herencias.Ejercicio2.Main",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "A02_Practica3_2_Herencias.Ejercicio1.Main",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "FechaTest",
+            "request": "launch",
+            "mainClass": "Practica2.FechaTest",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
             "name": "EjerciciosConBucles",
             "request": "launch",
             "mainClass": "Practica1.EjerciciosConBucles",
