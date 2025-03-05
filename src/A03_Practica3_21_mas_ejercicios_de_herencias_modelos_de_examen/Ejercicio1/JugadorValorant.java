@@ -12,6 +12,6 @@ public class JugadorValorant extends Jugador {
         return this.agenteFavorito;
     }
     public void setAgenteFavorito (String agenteFavorito){
-       this.agenteFavorito=agenteFavorito;        
+        this.agenteFavorito=agenteFavorito;        
     } 
 }

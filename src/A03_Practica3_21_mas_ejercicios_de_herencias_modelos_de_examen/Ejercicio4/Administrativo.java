@@ -35,6 +35,6 @@ public class Administrativo extends Personal{
 
     public void atenderPaciente(){
         
-        System.out.println("el Administrativo "+getNombre()+" ha atendido a un paciente ");
+        System.out.println("el Administrativo "+this.nombre" ha atendido a un paciente ");
     }
 }

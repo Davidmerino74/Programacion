@@ -6,23 +6,25 @@ public class AtletaAtletismo extends Atleta{
 
     public AtletaAtletismo(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas,String distanciaPreferida){
         super(nombre,nacionalidad,edad,disciplina,medallasGanadas);
-        this.distanciaPreferida=miDistanciaPreferida(distanciaPreferida);
+        if (distanciaPreferida.equals("100m")||distanciaPreferida.equals("200m")||distanciaPreferida.equals("maratón")){
+            this.distanciaPreferida=distanciaPreferida;
+        }else{
+            this.distanciaPreferida="100m";
+        }
+        
     }
 
     public String getDistanciaPreferida() {
         return distanciaPreferida;
     }
-    //llama al metodo miDistanciaPreferida para comprobar el String introducido
+    
     public void setDistanciaPreferida (String miDistanciaPreferida) {
-        this.distanciaPreferida = miDistanciaPreferida(miDistanciaPreferida);
-    }   
-
-    //puesto la distancia de  100m en el caso de meterlo mal
-    public String miDistanciaPreferida(String miDistanciaPreferida){
-        if(miDistanciaPreferida.equals("100m")||miDistanciaPreferida.equals("200m")||miDistanciaPreferida.equals("maratón")){
-            return miDistanciaPreferida;
+        if (distanciaPreferida.equals("100m")||distanciaPreferida.equals("200m")||distanciaPreferida.equals("maratón")){
+            this.distanciaPreferida=miDistanciaPreferida;
         }else{
-            return "100m";
+            this.distanciaPreferida="100m";
         }
     }
+
+
 }

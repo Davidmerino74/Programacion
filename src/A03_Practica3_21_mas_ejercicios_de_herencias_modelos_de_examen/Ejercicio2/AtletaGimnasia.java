@@ -6,7 +6,11 @@ public class AtletaGimnasia extends Atleta{
 
     public AtletaGimnasia(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas,String aparatoUsado){
         super(nombre,nacionalidad,edad,disciplina,medallasGanadas);
-        this.aparatoUsado=miDistanciaPreferida(aparatoUsado);
+        if(aparatoUsado.equals("barra")||aparatoUsado.equals("suelo")||aparatoUsado.equals("anillas")){
+            this.aparatoUsado=aparatoUsado;
+        }else{
+            this.aparatoUsado= "barra";
+        }
     }
 
     public String getAparatoUsado() {
@@ -14,15 +18,12 @@ public class AtletaGimnasia extends Atleta{
     }
     //llama al metodo miEstilo para comprobar el String introducido
     public void setAparatoUsado (String aparatoUsado) {
-        this.aparatoUsado = miDistanciaPreferida(aparatoUsado);
+        if(aparatoUsado.equals("barra")||aparatoUsado.equals("suelo")||aparatoUsado.equals("anillas")){
+            this.aparatoUsado=aparatoUsado;
+        }else{
+            this.aparatoUsado= "barra";
+        }
     }   
 
-    //puesto el aparato barra en el caso de meterlo mal
-    public String miDistanciaPreferida(String aparatoUsado){
-        if(aparatoUsado.equals("barra")||aparatoUsado.equals("suelo")||aparatoUsado.equals("anillas")){
-            return aparatoUsado;
-        }else{
-            return "barra";
-        }
-    }
+    
 }

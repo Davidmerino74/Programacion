@@ -5,25 +5,26 @@ public class AtletaNatacion extends Atleta{
 
     public AtletaNatacion(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas,String estiloPrincipal){
         super(nombre,nacionalidad,edad,disciplina,medallasGanadas);
-        this.estiloPrincipal=miEstilo(estiloPrincipal);
+        if(estiloPrincipal.equals("libre")||estiloPrincipal.equals("espalda")||estiloPrincipal.equals("mariposa")|estiloPrincipal.equals("pecho")){
+            this.estiloPrincipal=estiloPrincipal;
+        }else{
+            this.estiloPrincipal= "libre";
+        }
     }
 
     public String getEstiloPrincipal() {
         return this.estiloPrincipal;
     }
-    //llama al metodo miEstilo para comprobar el String introducido
+    
     public void setEstiloPrincipal(String estiloPrincipal) {
-        this.estiloPrincipal = miEstilo(estiloPrincipal);
-    }
-
-    //puesto el estilo libre en el caso de meterlo mal
-    public String miEstilo(String miestilo){
-        if(miestilo.equals("libre")||miestilo.equals("espalda")||miestilo.equals("mariposa")|miestilo.equals("pecho")){
-            return miestilo;
+        if(estiloPrincipal.equals("libre")||estiloPrincipal.equals("espalda")||estiloPrincipal.equals("mariposa")|estiloPrincipal.equals("pecho")){
+            this.estiloPrincipal=estiloPrincipal;
         }else{
-            return "libre";
+            this.estiloPrincipal= "libre";
         }
     }
+
+   
 
 
 }

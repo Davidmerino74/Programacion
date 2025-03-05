@@ -18,8 +18,8 @@ public class TiempoCompleto extends Empleada{
 
     @Override
     public void pagar_salario(){
-        double salarioTotal=(getSalario()+this.bonoHoras);
-        System.out.println("Empleado :"+getNombre()+"\napellidos :"+ getApellidos()+"\nSalario Total :"+salarioTotal+" Euros" );
+        double salarioTotal=(this.salario+this.bonoHoras);
+        System.out.println("Empleado :"+this.nombre+"\napellidos :"+ this.apellidos+"\nSalario Total :"+salarioTotal+" Euros" );
     }
     
 }

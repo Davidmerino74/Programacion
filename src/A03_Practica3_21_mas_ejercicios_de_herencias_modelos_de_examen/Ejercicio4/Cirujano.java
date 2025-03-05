@@ -32,6 +32,6 @@ public class Cirujano extends Personal{
 
     public void atenderPaciente(){
         this.cantCirujiasRealizadas++;
-        System.out.println("el Cirujano "+getNombre()+" ha atendido a un paciente y suma uno al contador");
+        System.out.println("el Cirujano "+this.nombre+" ha atendido a un paciente y suma uno al contador");
     }
 }

@@ -31,6 +31,6 @@ public class Doctor extends Personal{
 
     public void atenderPaciente(){
         this.numeroPacientesAtendidos++;
-        System.out.println("el Doctor "+getNombre()+" ha atendido a un paciente y suma uno al contador");
+        System.out.println("el Doctor "+this.nombre+" ha atendido a un paciente y suma uno al contador");
     }
 }

@@ -7,11 +7,17 @@ public class Pedido {
     private String estado;
 
 
-    public Pedido(String pCliente,String pProducto,double pPrecio){
+    public Pedido(String pCliente,String pProducto,double pPrecio,String pEstado){
         this.cliente=pCliente;
         this.producto=pProducto;
         this.precio=pPrecio;
-        this.estado="Pendiente";
+        if(pEstado !="Pendiente"&& pEstado!="Pagado"&& pEstado!="Enviado"){
+            this.estado="Pendiente";
+        }else{
+            this.estado=pEstado;
+        }
+
+        
     }
 
     public String getCliente(){
@@ -44,9 +50,7 @@ public class Pedido {
             this.estado=nuevoEstado;
         }else if (this.estado.equals("Pagado") && nuevoEstado.equals("Enviado")){
             this.estado=nuevoEstado;
-        }else if (this.estado.equals("Enviado") && nuevoEstado.equals("Pendiente")){
-            this.estado=nuevoEstado;
-        }else{
+        }else {
             System.out.println("el nuevo estado no esta permitido");
         }            
         

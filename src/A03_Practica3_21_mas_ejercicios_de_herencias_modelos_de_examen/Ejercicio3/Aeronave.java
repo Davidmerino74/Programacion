@@ -1,11 +1,11 @@
 package A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio3;
 
-public abstract class Aeronave {
-    private String fabricante;
-    private String modelo;
-    private int capacidadPasajeros;
-    private int autonomiaVuelo;
-    private int velocidad;
+public  class Aeronave {
+    protected String fabricante;
+    protected String modelo;
+    protected int capacidadPasajeros;
+    protected int autonomiaVuelo;
+    protected int velocidad;
 
     public Aeronave(String fabricante,String modelo,int capacidadPasajeros,int autonomiaVuelo,int velocidad){
         this.fabricante=fabricante;

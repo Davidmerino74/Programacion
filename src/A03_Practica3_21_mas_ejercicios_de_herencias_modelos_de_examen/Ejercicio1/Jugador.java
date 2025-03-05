@@ -1,12 +1,12 @@
 package A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio1;
 
-public abstract class Jugador {
-    private String nombre;
-    private String nacionalidad;
-    private String nombreDelEquipo;
-    private int torneosGanados;
-    private int puntosRanking;
-    private int categoria;
+public class Jugador {
+    protected String nacionalidad;
+    protected String nombreDelEquipo;
+    protected int torneosGanados;
+    protected int puntosRanking;
+    protected String nombre;
+    protected int categoria;
 
 
     public Jugador(String nombre,String nacionalidad,String nombreDelEquipo,int torneosGanados,int puntosRanking,int categoria){

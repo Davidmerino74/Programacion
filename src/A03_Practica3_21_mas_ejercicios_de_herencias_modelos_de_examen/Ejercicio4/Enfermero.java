@@ -6,7 +6,11 @@ public class Enfermero extends Personal{
 
     public Enfermero(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String areaAsignada,int cantPacientesAtendidos){
         super(nombre,edad,id,turnotrabajo,aniosExperiencia);
-        this.areaAsignada=miAreaAsignada(areaAsignada);
+        if(areaAsignada.equals("urgencias")||areaAsignada.equals("pediatría")||areaAsignada.equals("quirofano")){
+            this.areaAsignada= areaAsignada;
+        }else{
+            this.areaAsignada= "urgencias";
+        }
         this.cantPacientesAtendidos=cantPacientesAtendidos;
 
     }
@@ -18,7 +22,11 @@ public class Enfermero extends Personal{
     }
 
     public void setAreaAsignada(String areaAsignada) {
-        this.areaAsignada = miAreaAsignada(areaAsignada);
+        if(areaAsignada.equals("urgencias")||areaAsignada.equals("pediatría")||areaAsignada.equals("quirofano")){
+            this.areaAsignada= areaAsignada;
+        }else{
+            this.areaAsignada= "urgencias";
+        }
     }
 
     public int getCantPacientesAtendidos() {
@@ -31,17 +39,10 @@ public class Enfermero extends Personal{
     
     public void atenderPaciente(){
         this.cantPacientesAtendidos++;
-        System.out.println("el Enfermero "+getNombre()+" ha atendido a un paciente y suma uno al contador");
+        System.out.println("el Enfermero "+this.nombre+" ha atendido a un paciente y suma uno al contador");
     }
 
-    //por defecto si lo introduce mal el area se le asigna urgencias
-    public String miAreaAsignada(String areaAsignada){
-        if(areaAsignada.equals("urgencias")||areaAsignada.equals("pediatría")||areaAsignada.equals("quirofano")){
-            return areaAsignada;
-        }else{
-            return "urgencias";
-        }
-    }
+   
 
 
 }

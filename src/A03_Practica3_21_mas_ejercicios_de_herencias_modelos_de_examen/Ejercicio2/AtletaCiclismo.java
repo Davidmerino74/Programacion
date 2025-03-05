@@ -5,24 +5,25 @@ public class AtletaCiclismo extends Atleta{
 
     public AtletaCiclismo(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas,String tipoBicicleta){
         super(nombre,nacionalidad,edad,disciplina,medallasGanadas);
-        this.tipoBicicleta=miTipoBicicleta(tipoBicicleta);
+        if (tipoBicicleta.equals("ruta")||tipoBicicleta.equals("montaña")||tipoBicicleta.equals("pista")){
+            this.tipoBicicleta=tipoBicicleta;
+        }else{
+            this.tipoBicicleta="ruta";
+        }
+        
 
     }
     public String getTipoBicicleta() {
         return tipoBicicleta;
     }
     public void setTipoBicicleta(String tipoBicicleta) {
-        this.tipoBicicleta=miTipoBicicleta(tipoBicicleta);
-    }
-
-    //si pone mal el tipo de bicicleta se pone ruta por defecto
-    public String miTipoBicicleta(String tipoBicicleta){
-        
         if (tipoBicicleta.equals("ruta")||tipoBicicleta.equals("montaña")||tipoBicicleta.equals("pista")){
-            return tipoBicicleta;
+            this.tipoBicicleta=tipoBicicleta;
         }else{
-            return "ruta";
+            this.tipoBicicleta="ruta";
         }
     }
+
+    
         
 }

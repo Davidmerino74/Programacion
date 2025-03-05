@@ -16,8 +16,8 @@ public class TiempoParcial extends Empleada{
     }
     @Override
     public void pagar_salario(){
-        double salarioTotal=getSalarioxHora()*this.horasTrabajadas;
-        System.out.println("Empleado :"+getNombre()+"\napellidos :"+ getApellidos()+"\nSalario Total :"+salarioTotal+" Euros" );
+        double salarioTotal=salarioxHora*this.horasTrabajadas;
+        System.out.println("Empleado :"+this.nombre+"\napellidos :"+ this.apellidos+"\nSalario Total :"+salarioTotal+" Euros" );
     }
 
 

@@ -1,10 +1,10 @@
 package A02_Practica3_2_Herencias.Ejercicio2;
 
 public abstract class Empleada {
-    private String nombre;
-    private String apellidos;
-    private double salario;
-    private static final int salarioxHora=10;
+    protected String nombre;
+    protected String apellidos;
+    protected double salario;
+    protected static final int salarioxHora=10;
 
     
     

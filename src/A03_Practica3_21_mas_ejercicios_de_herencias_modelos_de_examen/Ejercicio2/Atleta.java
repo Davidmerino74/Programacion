@@ -1,16 +1,16 @@
 package A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio2;
 
 public abstract class Atleta {
-    private String nombre;
-    private String nacionalidad;
-    private int edad;
-    private String disciplina;
-    private int medallasGanadas;
+    protected String nombre;
+    protected String nacionalidad;
+    protected int edad;
+    protected String disciplina;
+    protected int medallasGanadas;
     //no se si estos atributos se pueden poner mejor en los métodos directamente
-    private int medallaOro;
-    private int medallaPlata;
-    private int medallaBronce;
-    private double mejormarca;
+    protected int medallaOro;
+    protected int medallaPlata;
+    protected int medallaBronce;
+    protected double mejormarca;
 
     public Atleta(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas){
         this.nombre=nombre;

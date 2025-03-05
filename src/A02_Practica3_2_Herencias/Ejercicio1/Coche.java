@@ -9,7 +9,11 @@ public class Coche extends Vehiculo{
     public Coche (String marca,String modelo,int anio,int kilometraje,int numeroPuertas, String tamanoDelMotor){
         super(marca,modelo,anio,kilometraje);
         this.numeroPuertas=numeroPuertas;
-        setTamanoDelMotor(tamanoDelMotor);
+        if (tamanoDelMotor=="Pequeño"|| tamanoDelMotor=="Mediano"|| tamanoDelMotor=="Grande"){
+            this.tamanoDelMotor=tamanoDelMotor;
+        }else{
+            this.tamanoDelMotor="Pequeño";
+        }
     }
 
     public int getNumeroPuertas(){
@@ -23,12 +27,10 @@ public class Coche extends Vehiculo{
     public String getTamanoDelMotor(){
         return this.tamanoDelMotor;
     }
-  public void setTamanoDelMotor(String tamanoDelMotor) {
-    if (tamanoDelMotor.equals("pequeño")||(tamanoDelMotor.equals("mediano")||(tamanoDelMotor.equals("grande")))){
-        this.tamanoDelMotor=tamanoDelMotor;
-    }else{
-        this.tamanoDelMotor="mediano";
+    public void setTamanoDelMotor(String tamanoDelMotor) {
+        this.tamanoDelMotor = tamanoDelMotor;
     }
+ 
 
     // Scanner scanner = new Scanner(System.in);
 
@@ -46,13 +48,13 @@ public class Coche extends Vehiculo{
 
     //método
     public void mostrarInfo(){
-    System.out.println("Camion: "+ 
-        " Marca = "+ getMarca() +
-        " Modelo ="+ getModelo() + 
-        " Año = " + getAnio() +
-        " Kilometraje = " + getKilometraje() +
-        " Numero de puertas = " + getNumeroPuertas()+
-        " Tamaño del motor = " + getTamanoDelMotor()
+    System.out.println("Coche: "+ 
+        " Marca = "+ this.marca+
+        " Modelo ="+ this.modelo + 
+        " Año = " +this.anio+
+        " Kilometraje = " + this.kilometraje +
+        " Numero de puertas = " + this.numeroPuertas+
+        " Tamaño del motor = " + this.tamanoDelMotor
         );
     }
 

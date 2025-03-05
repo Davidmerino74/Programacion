@@ -1,10 +1,10 @@
 package A02_Practica3_2_Herencias.Ejercicio1;
 
-public abstract class Vehiculo {
-    private String marca;
-    private String modelo;
-    private int anio;
-    private int kilometraje;
+public class Vehiculo {//NO es abstracta
+    protected String marca;
+    protected String modelo;
+    protected int anio;
+    protected int kilometraje;
 
 
     public Vehiculo(String marca,String modelo,int anio,int kilometraje){
@@ -41,7 +41,9 @@ public abstract class Vehiculo {
     
 
     //métodos
-    public abstract void mostrarInfo();
+    public  void mostrarInfo(){
+        System.out.println("tienes un"+this.marca+" modelo"+this.modelo+" del año"+ this.anio+" y con "+this.kilometraje);
+    }
 
 
    

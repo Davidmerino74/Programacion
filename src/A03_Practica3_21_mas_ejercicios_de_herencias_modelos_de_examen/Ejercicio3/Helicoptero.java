@@ -7,7 +7,12 @@ public class Helicoptero extends Aeronave{
     public Helicoptero(String fabricante,String modelo,int capacidadPasajeros,int autonomiaVuelo,int velocidad,int numeroRotores,String usoCivil_Militar){
         super(fabricante,modelo,capacidadPasajeros,autonomiaVuelo,velocidad);
         this.numeroRotores=numeroRotores;
-        this.usoCivil_Militar=usoCivil_Militar;
+        if (usoCivil_Militar.equals("Civil")||usoCivil_Militar.equals("Militar")){
+            this.usoCivil_Militar=usoCivil_Militar;
+        }else{
+            this.usoCivil_Militar="Civil";
+        }
+        
     }
 
 

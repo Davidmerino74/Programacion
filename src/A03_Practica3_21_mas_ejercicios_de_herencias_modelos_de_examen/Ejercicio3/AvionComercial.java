@@ -7,7 +7,11 @@ public class AvionComercial extends Aeronave {
     public AvionComercial(String fabricante, String modelo, int capacidadPasajeros, int autonomiaVuelo, int velocidad,int numeroAerolinea, String clase) {
         super(fabricante, modelo, capacidadPasajeros, autonomiaVuelo, velocidad);
         this.numeroAerolinea = numeroAerolinea;
-        this.clase = miClase(clase);
+        if (clase.equals("turista") || clase.equals("business") || clase.equals("primera clase")) {
+            this.clase=clase;
+        } else {
+            this.clase= "turista";
+        }
     }
 
     public int getNumeroAerolinea() {
@@ -20,15 +24,8 @@ public class AvionComercial extends Aeronave {
         return this.clase;
     }
     public void setClase(String clase){
-        this.clase=miClase(clase);
+        this.clase=clase;
     }
 
-    // si responde incorrectamente se anota turista,indica en el enunciado cantidad de clases, no se si es un int por cada clase y creamos tres variables para contabilizar igual seria un array preguntar profe
-    public String miClase(String clase) {
-        if (clase.equals("turista") || clase.equals("business") || clase.equals("primera clase")) {
-            return clase;
-        } else {
-            return "turista";
-        }
-    }
+   
 }

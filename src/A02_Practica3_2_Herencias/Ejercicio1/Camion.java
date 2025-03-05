@@ -8,7 +8,11 @@ public class Camion extends Vehiculo{
     public Camion (String marca,String modelo,int anio,int kilometraje,int capacidadCarga, String tipoCarga){
         super(marca,modelo,anio,kilometraje);
         this.capacidadCarga=capacidadCarga;
-        setTipoCarga(tipoCarga);
+        if (tipoCarga=="liviana"||tipoCarga=="media"||tipoCarga=="pesada"){
+            this.tipoCarga=tipoCarga;
+        }else{
+            this.tipoCarga="liviana";
+        }
     }
 
 
@@ -38,20 +42,15 @@ public class Camion extends Vehiculo{
         }
     }
 
-        //método
+        //método preguntar profesor puso this.marca marca error
     public void mostrarInfo(){
         System.out.println("Camion: "+ 
-            " Marca = "+ getMarca() +
-            " Modelo ="+ getModelo() + 
-            " Año = " + getAnio() +
-            " Kilometraje = " + getKilometraje() +
-            " Capacidad = " + getCapacidadCarga() +
-            " Tipo de Carga = " + getTipoCarga()
+            " Marca = "+ this.marca +
+            " Modelo ="+ this.modelo+ 
+            " Año = " + this.anio+
+            " Kilometraje = " + this.kilometraje+
+            " Capacidad = " + this.capacidadCarga+
+            " Tipo de Carga = " + this.tipoCarga
             );
     }
-    
-
-   
-    
-   
 }
