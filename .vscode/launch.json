@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "testConexionBasica",
+            "request": "launch",
+            "mainClass": "POO_ConexionNico.testConexionBasica",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "testConexionBasica",
+            "request": "launch",
+            "mainClass": "Practica2.testConexionBasica",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
+            "name": "mainpruebaswitch",
+            "request": "launch",
+            "mainClass": "A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio2.mainpruebaswitch",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio2.Main",

@@ -4,6 +4,7 @@ public abstract class Empleada {
     protected String nombre;
     protected String apellidos;
     protected double salario;
+    //se podria omitir la siguiente linea y usar el 10 el la formula siguiente
     protected static final int salarioxHora=10;
 
     
@@ -40,6 +41,6 @@ public abstract class Empleada {
     public void setSalario(double salario){
         this.salario=salario;
     }
-    
+    //OJO CON EL PUNTO Y COMA
     public abstract void pagar_salario();
 }

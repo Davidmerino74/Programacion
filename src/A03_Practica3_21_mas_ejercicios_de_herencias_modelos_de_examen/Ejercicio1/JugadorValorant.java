@@ -14,4 +14,10 @@ public class JugadorValorant extends Jugador {
     public void setAgenteFavorito (String agenteFavorito){
         this.agenteFavorito=agenteFavorito;        
     } 
+    public void ganarTorneo(int puntos){
+        super.ganarTorneo(puntos);
+    }
+    public void subirNivel(){
+        super.subirNivel();
+    }
 }

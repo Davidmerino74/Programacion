@@ -1,6 +1,6 @@
 package A02_Practica3_2_Herencias.Ejercicio1;
 
-import java.util.Scanner;
+
 
 public class Coche extends Vehiculo{
     private int numeroPuertas;
@@ -42,7 +42,7 @@ public class Coche extends Vehiculo{
     
     // this.tamanoDelMotor = tamanoDelMotor;
     // scanner.close();    //aún quitandolo sigue mal,para mediano y granda sale bien pero para pequeño sale siempre la frase   
-}
+
 
 
 

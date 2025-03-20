@@ -16,9 +16,10 @@ public class TiempoCompleto extends Empleada{
         this.bonoHoras=bonoHoras;
     }
 
-    @Override
+   //VA SIN Override
+    //OJO NO HAY QUE PASARLE NADA ENTRE PARENTESIS
     public void pagar_salario(){
-        double salarioTotal=(this.salario+this.bonoHoras);
+        double salarioTotal=(this.salario*10+this.bonoHoras*10);
         System.out.println("Empleado :"+this.nombre+"\napellidos :"+ this.apellidos+"\nSalario Total :"+salarioTotal+" Euros" );
     }
     

@@ -1,6 +1,6 @@
 package A02_Practica3_2_Herencias.Ejercicio3;
 
-public class Rectangulo implements Figura{
+public class Rectangulo extends Figura{
     private int ancho;
     private int alto;
 
@@ -23,7 +23,7 @@ public class Rectangulo implements Figura{
         this.alto = alto;
     }
 
-    @Override
+   
     public  double calcularArea(){
         return this.ancho*this.alto;
     }

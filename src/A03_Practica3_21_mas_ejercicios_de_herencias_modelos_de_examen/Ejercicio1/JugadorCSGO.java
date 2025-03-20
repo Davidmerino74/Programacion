@@ -13,4 +13,11 @@ public class JugadorCSGO extends Jugador{
     public void setPrecicionPorcentaje(double precisionPorcentaje){
         this.precisionPorcentaje=precisionPorcentaje;
     }
+
+    public void ganarTorneo(int puntos){
+        super.ganarTorneo(puntos);
+    }
+    public void subirNivel(){
+        super.subirNivel();
+    }
 }

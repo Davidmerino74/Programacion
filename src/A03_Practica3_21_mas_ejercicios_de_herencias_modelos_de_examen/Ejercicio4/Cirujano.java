@@ -4,8 +4,8 @@ public class Cirujano extends Personal{
     private int cantCirujiasRealizadas;
     private String tipoCirujia;
 
-    public Cirujano(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia, int cantCirujiasRealizadas,String tipoCirujia){
-        super(nombre,edad,id,turnotrabajo,aniosExperiencia);
+    public Cirujano(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String puesto, int cantCirujiasRealizadas,String tipoCirujia){
+        super(nombre,edad,id,turnotrabajo,aniosExperiencia,puesto);
         this.cantCirujiasRealizadas=cantCirujiasRealizadas;
         this.tipoCirujia=tipoCirujia;       
     }
@@ -33,5 +33,19 @@ public class Cirujano extends Personal{
     public void atenderPaciente(){
         this.cantCirujiasRealizadas++;
         System.out.println("el Cirujano "+this.nombre+" ha atendido a un paciente y suma uno al contador");
+    }
+    public void ascenderPuesto(){
+        switch (this.puesto) {
+            case ("nivel1"):
+            this.puesto="nivel2";                
+                break;
+            case ("nivel2"):                
+            this.puesto="nivel3";
+                break;
+            default:
+            System.out.println("Error");
+                break;
+        }
+
     }
 }

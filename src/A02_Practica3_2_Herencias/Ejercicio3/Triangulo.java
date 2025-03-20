@@ -1,6 +1,6 @@
 package A02_Practica3_2_Herencias.Ejercicio3;
 
-public class Triangulo implements Figura{
+public class Triangulo extends Figura{
     private int base;
     private int altura;
 

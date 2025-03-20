@@ -1,4 +1,6 @@
-package Practica2;
+package POO_ConexionNico;
+
+import java.io.IO;
 
 public class FechaTest {
 
@@ -23,6 +25,9 @@ public class FechaTest {
             Fecha hoy=new Fecha();
             hoy.setNow();
             hoy.mostrarFecha();
+            
+            //dia siguiente
+            
 
             Fecha now1= new Fecha();
             now1.setFecha(31,12,2025);
@@ -49,7 +54,60 @@ public class FechaTest {
             }else{
                 System.out.println("El año "+f7.getAnio()+" NO es bisiesto");
             }
+            
 
+            Fecha f6=new Fecha();
+            f6.setNow();
+            f6.next();
+            int cont=0;
+            while (cont<100){
+                f6.mostrarFecha();
+                f6.next();
+                cont++;
+            }
+
+            //pasamos la fecha a un número, testeamos el metodo valueOf
+            Fecha f8=new Fecha();
+            f8.setNow();
+            int valor;
+            valor=f8.valueOf();
+            f8.mostrarFecha();
+            System.out.println("el valor es: "+valor);
+
+
+            //probando el método sobreescrito toString
+            System.out.println(f8.toString());
+            System.out.println(f8);
+
+            //probando el método toString2
+            System.out.println(f8.toString2());
+            System.out.println(f8);//imprimen lo mismo,ya que espera el tostring, en este caso coge el toString primero no el toString2
+
+            //probamos el parseInt
+            f8.parseInt(20260825);
+            //imprimirlo para verlo bien por pantalla
+
+            //test para fecha esFechaValida
+            int d2;
+            int m2;
+            int a2;
+            d2=10;
+            m2=12;
+            a2=2025;
+            if (Fecha.esFechaValida(d2,m2,a2)){
+                System.out.println("es fecha valida");
+
+            }else{
+                System.err.println("Noes fecha valida");
+            }
+
+            Fecha f9=new Fecha(d2,m2,a2);
+            if (f9.esFechaValida()){
+                System.out.println("es fecha valida");
+
+            }else{
+                System.out.println("no es fecha valida");
+            }
             
         }
         

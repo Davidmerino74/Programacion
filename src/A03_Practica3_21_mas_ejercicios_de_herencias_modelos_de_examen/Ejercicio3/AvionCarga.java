@@ -22,5 +22,13 @@ public class AvionCarga extends Aeronave{
     public void setTipoMercancia(String tipoMercancia) {
         this.tipoMercancia = tipoMercancia;
     }
-    
+    //es mejor poner los métodos del super aunque los resuelva en el padre, debe ser mejor
+   
+    public void repostarCombustible(){
+        super.repostarCombustible();
+    }
+    public void actualizarModelo(String nuevoModelo){
+        super.actualizarModelo(nuevoModelo);
+    }
+
 }

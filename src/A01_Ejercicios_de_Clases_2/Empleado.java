@@ -43,7 +43,7 @@ public class Empleado {
 
         }
         if (aniosTrabajados>2){
-            salarioconbono=this.aniosTrabajados*(salarioBase+(salarioBase*5/100))+salarioconbono;
+            salarioconbono=this.aniosTrabajados*(salarioBase+(salarioBase*5/100))+salarioconbono;//el calculo creo que esta mal por cada año un 5%
         }
         return salarioconbono;
     }

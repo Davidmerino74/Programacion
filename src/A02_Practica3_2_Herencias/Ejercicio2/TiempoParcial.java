@@ -14,7 +14,7 @@ public class TiempoParcial extends Empleada{
     public void setHorasTrabajadas(double horasTrabajadas){
         this.horasTrabajadas=horasTrabajadas;
     }
-    @Override
+    //SOLO SE PONE EL override cuando se sobreescribe de la clase OBJEct
     public void pagar_salario(){
         double salarioTotal=salarioxHora*this.horasTrabajadas;
         System.out.println("Empleado :"+this.nombre+"\napellidos :"+ this.apellidos+"\nSalario Total :"+salarioTotal+" Euros" );

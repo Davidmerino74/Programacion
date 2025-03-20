@@ -1,6 +1,6 @@
 package A03_Practica3_21_mas_ejercicios_de_herencias_modelos_de_examen.Ejercicio2;
 
-public abstract class Atleta {
+public  abstract class Atleta {//creo que no hay que poner abstract ya que no heredan ningún método los hijos
     protected String nombre;
     protected String nacionalidad;
     protected int edad;
@@ -12,16 +12,16 @@ public abstract class Atleta {
     protected int medallaBronce;
     protected double mejormarca;
 
-    public Atleta(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas){
+    public Atleta(String nombre,String nacionalidad,int edad,String disciplina,int medallasGanadas,double mejormarca){
         this.nombre=nombre;
         this.nacionalidad=nacionalidad;
         this.edad=edad;
         this.disciplina=disciplina;
         this.medallasGanadas=medallasGanadas;
-        this.medallaOro=0;
+        this.medallaOro=0;//puesto como que empiezan todos con cero medallas
         this.medallaPlata=0;
         this.medallaBronce=0;
-        this.mejormarca=999;//anotada una cantidad superior para que al cotejar siempre sea menor y se actualize
+        this.mejormarca=mejormarca;
     }
 
 
@@ -95,11 +95,8 @@ public abstract class Atleta {
             System.out.println("el tipo de medalla solo puede ser Oro,Plata o Bronce");
         }        
     }
-    public void mejorarMarca(double marca){
-        if ((marca<mejormarca) && (marca>0)){
-            this.mejormarca=marca;
-        }
-    }
+    public abstract void mejorarMarca(double marca);// ojo con las marcas tienen que ser distintos para un corredor la mejor marca en menor pero en la de gimnasia la mejor marca es superior por lo que no 
+     
     //no se si es cambiar a alguna de las disciplinas que ya hay como natacion, tletismo, gimnasia,ciclismo, he puesto una generica dentro de la suya ya que las otras tienen atributos que la suya no tiene.
     public void cambiarDisciplina(String disciplinanueva){
         if (!disciplinanueva.equals(this.disciplina)){

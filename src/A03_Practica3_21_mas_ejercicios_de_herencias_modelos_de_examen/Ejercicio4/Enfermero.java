@@ -4,8 +4,8 @@ public class Enfermero extends Personal{
     private String areaAsignada;
     private int cantPacientesAtendidos;
 
-    public Enfermero(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String areaAsignada,int cantPacientesAtendidos){
-        super(nombre,edad,id,turnotrabajo,aniosExperiencia);
+    public Enfermero(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String areaAsignada,String puesto,int cantPacientesAtendidos){
+        super(nombre,edad,id,turnotrabajo,aniosExperiencia,puesto);
         if(areaAsignada.equals("urgencias")||areaAsignada.equals("pediatría")||areaAsignada.equals("quirofano")){
             this.areaAsignada= areaAsignada;
         }else{
@@ -42,7 +42,22 @@ public class Enfermero extends Personal{
         System.out.println("el Enfermero "+this.nombre+" ha atendido a un paciente y suma uno al contador");
     }
 
-   
+    public void cambiarTurno(String pTurno){
+    super.cambiarTurno(pTurno);
+    }
+    public void ascenderPuesto(){
+        switch (this.puesto) {
+            case ("nivel1"):
+            this.puesto="nivel2";                
+                break;
+            case ("nivel2"):                
+            this.puesto="nivel3";
+                break;
+            default:
+            System.out.println("Error");
+                break;
+        }
 
+    }
 
 }

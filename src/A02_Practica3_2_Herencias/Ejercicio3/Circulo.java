@@ -1,6 +1,6 @@
 package A02_Practica3_2_Herencias.Ejercicio3;
 
-public class Circulo implements Figura{
+public class Circulo extends Figura{
 
     private double radio;
 

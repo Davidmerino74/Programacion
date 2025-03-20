@@ -7,11 +7,7 @@ public class Helicoptero extends Aeronave{
     public Helicoptero(String fabricante,String modelo,int capacidadPasajeros,int autonomiaVuelo,int velocidad,int numeroRotores,String usoCivil_Militar){
         super(fabricante,modelo,capacidadPasajeros,autonomiaVuelo,velocidad);
         this.numeroRotores=numeroRotores;
-        if (usoCivil_Militar.equals("Civil")||usoCivil_Militar.equals("Militar")){
-            this.usoCivil_Militar=usoCivil_Militar;
-        }else{
-            this.usoCivil_Militar="Civil";
-        }
+        this.usoCivil_Militar=miUsoCivil_Militar(usoCivil_Militar);
         
     }
 
@@ -29,7 +25,23 @@ public class Helicoptero extends Aeronave{
     }
 
     public void setUsoCivil_Militar(String usoCivil_Militar) {
-        this.usoCivil_Militar = usoCivil_Militar;
+        this.usoCivil_Militar = miUsoCivil_Militar(usoCivil_Militar);
+    }
+
+    public String miUsoCivil_Militar(String usoCivil_Militar){
+        if (usoCivil_Militar.equals("Civil")||usoCivil_Militar.equals("Militar")){
+            return usoCivil_Militar;
+        }else{
+            return "Civil";
+        }
+    }
+     //es mejor poner los métodos del super aunque los resuelva en el padre, debe ser mejor
+   
+     public void repostarCombustible(){
+        super.repostarCombustible();
+    }
+    public void actualizarModelo(String nuevoModelo){
+        super.actualizarModelo(nuevoModelo);
     }
 
 }

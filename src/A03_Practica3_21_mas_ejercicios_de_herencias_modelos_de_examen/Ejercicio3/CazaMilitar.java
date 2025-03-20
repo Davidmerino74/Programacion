@@ -26,5 +26,13 @@ public class CazaMilitar extends Aeronave{
     public void setVelocidadAscenso(int velocidadAscenso) {
         this.velocidadAscenso = velocidadAscenso;
     }
+     //es mejor poner los métodos del super aunque los resuelva en el padre, debe ser mejor
+   
+     public void repostarCombustible(){
+        super.repostarCombustible();
+    }
+    public void actualizarModelo(String nuevoModelo){
+        super.actualizarModelo(nuevoModelo);
+    }
 
 }
