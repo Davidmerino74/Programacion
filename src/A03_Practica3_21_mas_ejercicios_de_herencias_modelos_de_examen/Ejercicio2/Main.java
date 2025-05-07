@@ -8,10 +8,10 @@ public class Main {
     
 
         //creados a mano, no los pide el ejercicio
-        AtletaNatacion nat=new AtletaNatacion("david", "española", 25, "junior", 0, "libre");
-        AtletaAtletismo atl=new AtletaAtletismo("jose", "francesa", 35, "senior", 10, "100m");
-        AtletaGimnasia gim=new AtletaGimnasia("pepe", "italiana", 45, "juvenil", 20, "barra");
-        AtletaCiclismo cic=new AtletaCiclismo("lolo", "estadounidense", 55, "senior2", 30, "ruta");
+        AtletaNatacion nat=new AtletaNatacion("david", "española", 25, "junior", 0,0.0, "libre");
+        AtletaAtletismo atl=new AtletaAtletismo("jose", "francesa", 35, "senior", 10, 2.2,"100m");
+        AtletaGimnasia gim=new AtletaGimnasia("pepe", "italiana", 45, "juvenil", 20, 10.3,"barra");
+        AtletaCiclismo cic=new AtletaCiclismo("lolo", "estadounidense", 55, "senior2", 30,20.5, "ruta");
 
         System.out.println(nat.toString());
         System.out.println(atl.toString());
@@ -36,11 +36,12 @@ public class Main {
         System.out.println("¿cuántas medallas has ganado?");
         int medallas=scanner.nextInt();
         scanner.nextLine();
-
+        System.out.println("¿cuál es tu mejor marca");
+        double mejorMarca=scanner.nextDouble();
         System.out.println("elige estilo principal entre libre,espalda,mariposa o pecho");
         String estilo=scanner.nextLine();
 
-        AtletaNatacion nat1=new AtletaNatacion(nombre, nacionalidad, edad, disciplina, medallas, estilo);
+        AtletaNatacion nat1=new AtletaNatacion(nombre, nacionalidad, edad, disciplina, medallas,mejorMarca, estilo);
 
         //para Atletismo
         System.out.println("introduce tu nombre");
@@ -55,11 +56,12 @@ public class Main {
         System.out.println("¿cuántas medallas has ganado?");
         int medallas2=scanner.nextInt();
         scanner.nextLine();
-
+        System.out.println("¿cuál es tu mejor marca");
+        double mejorMarca2=scanner.nextDouble();
         System.out.println("elige distancia preferida entre 100m,200m o maratón");
         String distancia=scanner.nextLine();
         
-        AtletaNatacion atl1=new AtletaNatacion(nombre2, nacionalidad2, edad2, disciplina2, medallas2, distancia);
+        AtletaNatacion atl1=new AtletaNatacion(nombre2, nacionalidad2, edad2, disciplina2, medallas2,mejorMarca2, distancia);
 
         //para gimnasia
         System.out.println("introduce tu nombre");
@@ -74,11 +76,12 @@ public class Main {
         System.out.println("¿cuántas medallas has ganado?");
         int medallas3=scanner.nextInt();
         scanner.nextLine();
-
+        System.out.println("¿cuál es tu mejor marca");
+        double mejorMarca3=scanner.nextDouble();
         System.out.println("elige tipo aparato entre barra,suelo o anillas");
         String aparato=scanner.nextLine();
         
-        AtletaNatacion gim1=new AtletaNatacion(nombre3, nacionalidad3, edad3, disciplina3, medallas3, aparato);
+        AtletaNatacion gim1=new AtletaNatacion(nombre3, nacionalidad3, edad3, disciplina3, medallas3,mejorMarca3, aparato);
 
         //para ciclismo
         System.out.println("introduce tu nombre");
@@ -93,18 +96,19 @@ public class Main {
         System.out.println("¿cuántas medallas has ganado?");
         int medallas4=scanner.nextInt();
         scanner.nextLine();
-
+        System.out.println("¿cuál es tu mejor marca");
+        double mejorMarca5=scanner.nextDouble();
         System.out.println("elige tipo de bici entre ruta, montaña o pista");
         String tipobici=scanner.nextLine();
         
-        AtletaNatacion cil1=new AtletaNatacion(nombre4, nacionalidad4, edad4, disciplina4, medallas4, tipobici);
+        AtletaNatacion cil1=new AtletaNatacion(nombre4, nacionalidad4, edad4, disciplina4, medallas4,mejorMarca5, tipobici);
         scanner.close();
 
         System.out.println(nat1.toString());
         System.out.println(atl1.toString());
         System.out.println(gim1.toString());
         System.out.println(cil1.toString());
-        
+    }    
 
         
 }

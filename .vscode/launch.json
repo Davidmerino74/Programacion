@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConexionTest",
+            "request": "launch",
+            "mainClass": "POO_ConexionNico.ConexionTest",
+            "projectName": "Programacion_8644afaa"
+        },
+        {
+            "type": "java",
             "name": "testConexionBasica",
             "request": "launch",
             "mainClass": "POO_ConexionNico.testConexionBasica",

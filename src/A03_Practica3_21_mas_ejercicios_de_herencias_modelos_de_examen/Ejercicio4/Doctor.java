@@ -4,8 +4,8 @@ public class Doctor extends Personal{
     private String especialidadMedica;
     private int numeroPacientesAtendidos;//este es el contador que pide en el metodo atender paciente
 
-    public Doctor(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String especialidadMedica,String turno,int numeroPacientesAtendidos){
-        super(nombre,edad,id,turnotrabajo,aniosExperiencia,turno);
+    public Doctor(String nombre,int edad,int id, String turnotrabajo,int aniosExperiencia,String especialidadMedica,String puesto,int numeroPacientesAtendidos){
+        super(nombre,edad,id,turnotrabajo,aniosExperiencia,puesto);
         this.especialidadMedica=especialidadMedica;
         this.numeroPacientesAtendidos=numeroPacientesAtendidos;
 

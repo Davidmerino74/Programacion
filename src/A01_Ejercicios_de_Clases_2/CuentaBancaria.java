@@ -51,7 +51,7 @@ public class CuentaBancaria {
     }
 
     public double retirar (double cantidad){
-        if (this.retirosDelDia<3) {
+        if (this.retirosDelDia<limiteRetiro) {
             if (this.saldo>=cantidad) {
                 this.saldo=this.saldo-cantidad;
                 return cantidad;

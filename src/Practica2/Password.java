@@ -22,12 +22,37 @@ public class Password {
         this.longitud=pContrasena.length();
     }
 
-    //método generarPassword
-    public String generarPassword(){
-        String caracteres="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-        for (int i=0;i<this.longitud;i++){
-            
-        }
+    public int getLongitud() {
+        return this.longitud;
     }
+
+    public void setLongitud(int longitud) {
+        this.longitud = longitud;
+    }
+
+    public String getContrasena() {
+        return this.contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+
+
+
+    //método generarPassword, he dejado un documento llamado StringBuilder es mas practico que concatenar String
+    public String generarPassword() {
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder password = new StringBuilder();
+    
+        for (int i = 0; i < this.longitud; i++) {
+            int indiceAleatorio = (int) (Math.random() * caracteres.length());
+            password.append(caracteres.charAt(indiceAleatorio));
+        }
+    
+        return password.toString();
+    }
+    
 }

@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class mainpruebaswitch {
     public static void main(String[] args) {
-        AtletaNatacion t=new AtletaNatacion("david", "española", 25, "junior", 0, "libre");
-        AtletaAtletismo l=new AtletaAtletismo("jose", "francesa", 35, "senior", 10, "100m");
-        AtletaGimnasia gim=new AtletaGimnasia("pepe", "italiana", 45, "juvenil", 20, "barra");
-        AtletaCiclismo c=new AtletaCiclismo("lolo", "estadounidense", 55, "senior2", 30, "ruta");
+        AtletaNatacion t=new AtletaNatacion("david", "española", 25, "junior", 0,10.3, "libre");
+        AtletaAtletismo l=new AtletaAtletismo("jose", "francesa", 35, "senior", 10,25.3, "100m");
+        AtletaGimnasia gim=new AtletaGimnasia("pepe", "italiana", 45, "juvenil", 20,20.6, "barra");
+        AtletaCiclismo c=new AtletaCiclismo("lolo", "estadounidense", 55, "senior2", 30,25.63, "ruta");
 
         System.out.println(t.toString());
         System.out.println(l.toString());

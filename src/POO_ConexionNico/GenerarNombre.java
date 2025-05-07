@@ -7,7 +7,7 @@ public class GenerarNombre {
         int longi=aNombres.length;
         int iAzar=(int)(Math.random()*longi);
         String nombre=aNombres[iAzar];
-        return (nombre)
+        return (nombre);
 
     }
     

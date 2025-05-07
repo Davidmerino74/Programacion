@@ -21,6 +21,8 @@ public class Main {
     System.out.println("años de experiencia");
     int aniosExperiencia1=scanner.nextInt();
     scanner.nextLine();
+    System.out.println("puesto");
+    String puesto1=scanner.nextLine();
 
     System.out.println("especialidad médica");
     String especialidad=scanner.nextLine();
@@ -28,7 +30,7 @@ public class Main {
     int pacientesAtendidos=scanner.nextInt();
     scanner.nextLine();
     
-    Doctor doc=new Doctor(nombre1, edad1, id1, turno1, aniosExperiencia1, especialidad, pacientesAtendidos);
+    Doctor doc=new Doctor(nombre1, edad1, id1, turno1, aniosExperiencia1,puesto1, especialidad, pacientesAtendidos);
     doc.atenderPaciente();
     doc.cambiarTurno("tarde");
     doc.ascenderPuesto();
@@ -46,6 +48,8 @@ public class Main {
     System.out.println("años de experiencia");
     int aniosExperiencia2=scanner.nextInt();
     scanner.nextLine();
+    System.out.println("puesto");
+    String puesto2=scanner.nextLine();
 
     System.out.println("area asignada entre urgencias,pediatría y quirófano");
     String areaAsignada=scanner.nextLine();
@@ -53,7 +57,7 @@ public class Main {
     int cantPacientesAtendidos=scanner.nextInt();
     scanner.nextLine();
 
-    Enfermero enf=new Enfermero(nombre2, edad2, id2, turno2, aniosExperiencia2, areaAsignada, cantPacientesAtendidos);
+    Enfermero enf=new Enfermero(nombre2, edad2, id2, turno2, aniosExperiencia2,puesto2, areaAsignada, cantPacientesAtendidos);
 
     enf.atenderPaciente();
     enf.cambiarTurno("noche");
@@ -72,6 +76,8 @@ public class Main {
     System.out.println("años de experiencia");
     int aniosExperiencia3=scanner.nextInt();
     scanner.nextLine();
+    System.out.println("puesto");
+    String puesto3=scanner.nextLine();
 
     System.out.println("cantidad de cirugías realizadas");
     int cantCirujiasRealizadas=scanner.nextInt();
@@ -79,7 +85,7 @@ public class Main {
     System.out.println("tipo de cigurias que puede realizar");
     String tipoCirugias=scanner.nextLine();
 
-    Cirujano cir=new Cirujano(nombre3, edad3, id3, turno3, aniosExperiencia3, cantCirujiasRealizadas, tipoCirugias);
+    Cirujano cir=new Cirujano(nombre3, edad3, id3, turno3, aniosExperiencia3,puesto3, cantCirujiasRealizadas, tipoCirugias);
 
     cir.atenderPaciente();
     cir.cambiarTurno("mañana");
@@ -99,13 +105,15 @@ public class Main {
     System.out.println("años de experiencia");
     int aniosExperiencia4=scanner.nextInt();
     scanner.nextLine();
+    System.out.println("puesto");
+    String puesto4=scanner.nextLine();
     
     System.out.println("departamento en el que trabajas");
     String departamento=scanner.nextLine();
     System.out.println("tienes acceso a datos confidenciales");
     boolean accesoDatosConfidenciales=scanner.nextBoolean();
 
-    Administrativo adm=new Administrativo(nombre4, edad4, id4, turno4, aniosExperiencia4, departamento, accesoDatosConfidenciales);
+    Administrativo adm=new Administrativo(nombre4, edad4, id4, turno4, aniosExperiencia4,puesto4, departamento, accesoDatosConfidenciales);
 
     adm.atenderPaciente();
     adm.cambiarTurno("tarde");
