@@ -28,12 +28,12 @@ public static String estadoConexion(Connection conn){
 public static boolean esConexion(String url, String user, String pass){
 	Connection conn = null;
     try {
-         Class.forName("com.mysql.cj.jdbc.Driver");
-         conn = DriverManager.getConnection(url, user, pass);
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        conn = DriverManager.getConnection(url, user, pass);
     } catch (ClassNotFoundException  e) {
-         e.printStackTrace();
+        e.printStackTrace();
     } catch (SQLException e) {
-         e.printStackTrace();
+        e.printStackTrace();
     }
 	if (conn==null){
 		return(false);
@@ -45,11 +45,11 @@ public static Connection getConexion(String url, String user, String pass){
 	Connection conn = null;
     try {
          //Class.forName("com.mysql.cj.jdbc.Driver");
-         conn = DriverManager.getConnection(url, user, pass);
+        conn = DriverManager.getConnection(url, user, pass);
     //} catch (ClassNotFoundException  e) {
     //     e.printStackTrace();
     } catch (SQLException e) {
-         e.printStackTrace();
+        e.printStackTrace();
     }
 	return(conn);
 }
@@ -57,9 +57,9 @@ public static Connection getConexion(String host, String bd, String user, String
 	Connection conn = null;
 	String url = "jdbc:mysql://" + host + ":3306/" + bd + "?useSSL=false";
     try {
-         conn = DriverManager.getConnection(url, user, pass);
+        conn = DriverManager.getConnection(url, user, pass);
     } catch (SQLException e) {
-         Sop("No se pudo establecer conexión");
+        Sop("No se pudo establecer conexión");
     }
 	return(conn);
 }
@@ -222,7 +222,7 @@ public static void inkey(int seconds) {
             while ((line = reader.readLine()) != null) {
                 if (line.contains("FontSize")) {
                    // String[] parts = line.trim().split("\s+");
-                   int fontSize=10;//  = Integer.parseInt(parts[parts.length - 1], 16) / 65536;
+                    int fontSize=10;//  = Integer.parseInt(parts[parts.length - 1], 16) / 65536;
                     return fontSize;
                 }
             }
