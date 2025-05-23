@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "edadesArray",
+            "request": "launch",
+            "mainClass": "POO_ConexionNico.edadesArray",
+            "projectName": "Programacion-nico_891643aa"
+        },
+        {
+            "type": "java",
+            "name": "CartaTest",
+            "request": "launch",
+            "mainClass": "POO_ConexionNico.BarajaCartas.CartaTest",
+            "projectName": "Programacion-nico_891643aa"
+        },
+        {
+            "type": "java",
             "name": "ConexionTest",
             "request": "launch",
             "mainClass": "POO_ConexionNico.ConexionTest",
